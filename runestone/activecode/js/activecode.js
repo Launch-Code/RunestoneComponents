@@ -187,9 +187,7 @@ ActiveCode.prototype.createControls = function () {
     }
 
     // CodeLens
-    if ( /* $(this.origElem).data("codelens") */ true) {
-        // LC MOD (line above)
-        // always include codelens
+    if ($(this.origElem).data("codelens")) {
         
         butt = document.createElement("button");
         $(butt).addClass("ac_opt btn btn-default");
